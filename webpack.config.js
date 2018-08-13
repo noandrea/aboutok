@@ -5,6 +5,7 @@ const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const OfflinePlugin = require('offline-plugin')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 let glob = require('glob-all')
@@ -52,14 +53,15 @@ module.exports = {
       alwaysWriteToDisk: true
     }),
     new CopyWebpackPlugin([
-      { from: path.join(__dirname, 'src/img/favicon.png'), to: 'dist/favicon.png' },
-      { from: path.join(__dirname, 'src/browserconfig.xml'), to: 'dist/browserconfig.xml' },
-      { from: path.join(__dirname, 'src/humans.txt'), to: 'dist/humans.txt' },
-      { from: path.join(__dirname, 'src/robots.txt'), to: 'dist/robots.txt' },
-      { from: path.join(__dirname, 'src/site.webmanifest'), to: 'dist/site.webmanifest' }
+      { from: path.join(__dirname, 'src/img/favicon.png'), to: 'favicon.png' },
+      { from: path.join(__dirname, 'src/browserconfig.xml'), to: 'browserconfig.xml' },
+      { from: path.join(__dirname, 'src/humans.txt'), to: 'humans.txt' },
+      { from: path.join(__dirname, 'src/robots.txt'), to: 'robots.txt' },
+      { from: path.join(__dirname, 'src/site.webmanifest'), to: 'site.webmanifest' }
     ]),
     new FaviconsWebpackPlugin(path.join(__dirname, 'src/img/favicon.png')),
     new HtmlWebpackHarddiskPlugin(),
+    new OfflinePlugin(),
     new ExtractTextPlugin('style.css?[hash]'),
     new CleanWebpackPlugin([distFolder])
     // debug bundle (for optimisation)
