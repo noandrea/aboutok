@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Enrico Icardi -- <role> -- https://twitter.com/ricricucit
+
+# THANKS
+
+    You
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JS
