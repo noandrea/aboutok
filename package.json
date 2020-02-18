@@ -1,0 +1,13 @@
+{
+  "name": "aboutme",
+  "version": "1.0.0",
+  "scripts": {
+    "build": ""
+  },
+  "author": "Andrea Giacobino",
+  "license": "EUPL1.2",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
