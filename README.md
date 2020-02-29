@@ -1,4 +1,4 @@
 # aboutme
 
-Andrea [personal homepage](https://adgb.me)
+Olha [personal homepage](https://kotska.network)
 
