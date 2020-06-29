@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Andrea Giacobino -- <role> -- https://andrea.giacobino.dev
+
+# THANKS
+
+    You
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5

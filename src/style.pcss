@@ -1,0 +1,43 @@
+
+@tailwind base;
+
+/*
+to get the correct font face use this 
+https://google-webfonts-helper.herokuapp.com/fonts
+*/
+
+/* hind-siliguri-regular - latin */
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Siliguri Regular'), local('HindSiliguri-Regular'),
+       url('./fonts/hind-siliguri-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/hind-siliguri-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* karma-regular - latin
+@font-face {
+  font-family: 'Karma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karma Regular'), local('Karma-Regular'),
+       url('./fonts/karma-v10-latin-regular.woff2') format('woff2'),
+       url('./fonts/karma-v10-latin-regular.woff') format('woff'); 
+} */
+
+/* heebo-regular - latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/heebo-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/heebo-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@tailwind components;
+@tailwind utilities;
+

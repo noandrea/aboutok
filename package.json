@@ -1,13 +1,25 @@
 {
   "name": "aboutme",
   "version": "1.0.0",
-  "scripts": {
-    "build": ""
-  },
   "author": "Andrea Giacobino",
   "license": "EUPL1.2",
-  "devDependencies": {
+  "scripts": {
+    "dev": "./node_modules/.bin/parcel src/index.html -d dev --target browser --open",
+    "build": "./node_modules/.bin/parcel build src/index.html -d dist --target browser"
   },
   "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "npm": "^6.14.5",
+    "tailwindcss": "^1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "postcss-modules": "^1.4.1",
+    "tailwindcss": "^1.1.3"
   }
 }

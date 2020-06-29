@@ -1,2 +1,6 @@
 dist
 node_modules
+dist
+dev
+.cache
+package-lock.json
